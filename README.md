@@ -30,8 +30,8 @@ http://localhost:8080/
 ```
 ## Demo
 ##### Entry page
-![Entry Page](/images/spo3.PNG)
+![Entry Page](/images/spo5.PNG)
 ##### Input Verification
 ![InputVerify](/images/spo2.PNG)
 ##### USPS Label
-![Label](/images/spo4.png)
+![Label](/images/spo6.png)
