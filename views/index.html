@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+     <title>USPS Label Printer</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <style type="text/css">
+         *{
+         margin:0;
+         padding:0
+         }
+         ul {
+         list-style:none;
+         position:relative;
+         }
+         .list {
+         float:left;
+         width:450px;
+         margin:20px;
+         }
+         .list li {
+         width:150px;
+         }
+         .list ul{margin-bottom:20px}
+         .list ul ul {
+         position:absolute;
+         top:0;
+         left:170px;
+         width:150px;
+         }
+         .list ul li {
+         <! –– background:yellow; ––>
+         }
+          button{height:50px; position:relative; margin: -20px -50px; width:200px; top:50%; left:200%;
+          }
+      </style>
+   </head>
+
+    <header>
+        <h1 align="center">USPS Label Printer</h1>
+        <h2 align="center">Please fill out the form below to receive your label</h2>
+        <p align="center">Select 'Generate Label' when completed</p>
+    </header>
+
+   <body>
+
+<form action= "/image">
+      <ul class="list">
+         <li>
+            <ul>
+               <li> <h2>From</h2> <br>
+                  <label for="name">Sender Name:</label>
+                  <input type="text" id="name1" name="from_name" required>
+                  <ul>
+                     <li> <h2>To</h2> <br>
+                        <label for="name">Recipient Name:</label>
+                        <input type="text" id="name2" name="to_name" required>
+                     </li>
+                     <ul>
+                       <! –– Parcel information here ––>
+                        <li> <h2>Parcel Info</h2> <br>
+                           <label for="name">Length (in):</label>
+                           <input type="number" id="length" name="length" required>
+                        </li>
+                        <li>
+                            <label for="name">Width (in):</label>
+                            <input type="number" id="width" name="width" required>
+                        </li>
+                        <li>
+                            <label for="name">Height (in):</label>
+                            <input type="number" id="height" name="height" required>
+                        </li>
+                        <li>
+                            <label for="name">Weight (oz):</label>
+                            <input type="number" id="weight" name="weight" required>
+                        </li>
+                     </ul>
+                    <! –– Recipient information here ––>
+                       <li>
+                            <label for="name">Street 1:</label>
+                            <input type="text" id="street1" name="to_street1" required>
+                       </li>
+                       <li>
+                            <label for="name">Street 2:</label>
+                            <input type="text" id="street2" name="to_street2" >
+                       </li>
+                       <li>
+                            <label for="name">City:</label>
+                            <input type="text" id="city" name="to_city" required>
+                       </li>
+                       <li>
+                            <label for="name">State:</label>
+                            <input type="text" id="state" name="to_state" required>
+                       </li>
+                       <li>
+                            <label for="name">Country:</label>
+                            <input type="text" id="country" name="to_country" required>
+                       </li>
+                        <li>
+                            <label for="name">Zip Code:</label>
+                            <input type="number" id="zip" name="to_zip" required>
+                       </li>
+                       <li>
+                            <label for="name">Phone:</label>
+                            <input type="number" id="phone" name="to_phone" >
+                       </li>
+                  </ul>
+               </li>
+                    <! –– Sender information here ––>
+                       <li>
+                            <label for="name">Street 1:</label>
+                            <input type="text" id="street1" name="from_street1" required>
+                       </li>
+                       <li>
+                            <label for="name">Street 2:</label>
+                            <input type="text" id="street2" name="from_street2" >
+                       </li>
+                       <li>
+                            <label for="name">City:</label>
+                            <input type="text" id="city" name="from_city" required>
+                       </li>
+                       <li>
+                            <label for="name">State:</label>
+                            <input type="text" id="state" name="from_state" required>
+                       </li>
+                       <li>
+                            <label for="name">Country:</label>
+                            <input type="text" id="country" name="from_country" required>
+                       </li>
+                        <li>
+                            <label for="name">Zip Code:</label>
+                            <input type="number" id="zip" name="from_zip" required>
+                       </li>
+                       <li>
+                            <label for="name">Phone:</label>
+                            <input type="number" id="phone" name="from_phone" >
+                       </li>
+            </ul>
+         </li>
+         <div id="wrapper">
+               <button align="center" type="submit" id="add-btn">Generate Label</button>
+              </div>
+      </ul>
+    </form>
+   </body>
+</html>
